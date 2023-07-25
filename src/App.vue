@@ -43,7 +43,7 @@ watch([keycloak, token], ([newKc, newTk], [oldKc, oldTk]) => {
 </script>
 
 <template>
-  <div class="h-screen w-full text-center flex flex-col gap-2 items-center justify-center">
+  <div class="h-screen w-full text-center flex flex-col gap-2 items-center justify-center" v-if="encodedToken">
     <h1 class="text-3xl">Welcome to <b>CRM</b></h1>
     <p class="font-thin text-2xl">
       Elevate Your Customer Relationships and Business Growth!
